@@ -19,7 +19,7 @@ function UseState() {
     setCount((count) => count - 1);
   };
   const reset = () => {
-    setCount((count) => count * 0);
+    setCount(0);
   };
   //timer
   const [time, setTime] = useState(0);

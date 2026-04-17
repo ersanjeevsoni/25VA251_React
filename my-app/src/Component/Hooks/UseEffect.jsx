@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { Button, Alert } from 'react-bootstrap';
 
-function UseEffect({name}) {
+function UseEffect() {
 const[timer,setTimer]=useState(0);
 
 useEffect(()=>{
@@ -41,10 +42,12 @@ It runs every time count changes */
         {/* useEffect(<function>, <dependency>) */}
     </p>
     <h3>Timer {timer}</h3>
-    <h3>Couter {count} </h3>
-    <button  onClick={() => setCount(count + 1)}>+</button>
-    <button  onClick={() => setCount(count - 1)}>-</button>
-
+    
+  <div className="d-flex flex-column align-items-center">
+  <h3>Couter {count} </h3>
+    <Button  onClick={() => setCount(count + 1)} variant="success" className='my-2 w-50'>+</Button>
+    <Button  onClick={() => setCount(count - 1)} variant="secondary" className='my-2 w-50'>-</Button>
+</div>
 
     </>
   )
