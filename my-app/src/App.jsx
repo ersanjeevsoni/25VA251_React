@@ -1,17 +1,17 @@
-
 import Props from "./Component/Props/Props";
 import UseState from "./Component/Hooks/UseState";
 import UseEffect from "./Component/Hooks/UseEffect";
+import StudentReg from "./Component/Form/StudentReg";
+import StundentForm from "./Component/Form/StundentForm";
 
 
 import StudentCard from "./Lab/Exp7/StudentCard";
 import Count from "./Lab/Exp8/Count";
 
-
-
+import RegistrationForm from "./Lab/Exp9/RegistrationForm";
 
 function App() {
-/*   const students = [
+  /*   const students = [
     { name: "Abhay", rollno: "250B1034", course: "B.Tech" },
     { name: "Vikas", rollno: "250B1035", course: "MCA" },
     { name: "Rahul", rollno: "250B1036", course: "BCA" }
@@ -19,13 +19,15 @@ function App() {
 
   return (
     <>
-    {/* <Props name="Abhay" rollno="250B1034" course="B.Tech"/> */}
-    {/* for multiple data */}
-    {/* <Props students={students} /> */}
-    {/* <UseState/> */}
-    {/* <UseEffect/> */}
+      {/* <Props name="Abhay" rollno="250B1034" course="B.Tech"/> */}
+      {/* for multiple data */}
+      {/* <Props students={students} /> */}
+      {/* <UseState/> */}
+      {/* <UseEffect/> */}
+      <StudentReg/>
+      {/* <StundentForm/> */}
 
-    {/* //Experiment 07 */}
+      {/* //Experiment 07 */}
       {/*  <h1>Student Information System</h1>
       <div className="student-container">
         <StudentCard name="Monika" course="B.Tech Data Science" marks="95" />
@@ -34,13 +36,10 @@ function App() {
       </div> */}
 
       {/* Experiment 08 */}
-      <Count/>
+      {/* <Count/> */}
 
- 
-
-    
-   
-   
+      {/* Experiment 09 */}
+      {/* <RegistrationForm/> */}
     </>
   );
 }
